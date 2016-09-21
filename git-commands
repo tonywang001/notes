@@ -1,0 +1,13 @@
+- to ignore untracked files, add file/directory to .gitignore file at project root directory
+
+- to ignore tracked files, git update-index --assume-unchanged <file>
+
+- git work flow
+  - git branch my_branch
+  - git checkout my_branch
+  - git push origin my_branch
+  - git branch --set-upstream my_branch origin/my_branch
+  - git add <file>
+  - git commit -m "commit message"
+  - git pull origin master
+  - git push origin my_branch
