@@ -1,0 +1,21 @@
+webauto/dashdb-data-movement/restapitest/frisby/run_tests.sh
+
+sudo docker run -i -t <name> sh
+sudo docker run -di <image name> sh
+docker exec -it <containerIdOrName> bash
+docker build -t <name> .
+
+sudo docker ps
+
+sudo docker cp webauto 750b0e4d8307:/root/webauto
+
+docker commit f7943e42aff0 apachesnapshot
+
+docker run -t -i apachesnapshot /bin/bash
+
+DISPLAY=:0.0
+codeDir=/root/webauto
+ucdPassword=dash4test
+JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
+ANT_HOME=/usr/share/java/apache-ant/
+PATH=$PATH:$JAVA_HOME/bin:$ANT_HOME/bin
