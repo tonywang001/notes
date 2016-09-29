@@ -13,6 +13,8 @@ docker commit f7943e42aff0 apachesnapshot
 
 docker run -t -i apachesnapshot /bin/bash
 
+
+// to create a new pipeline
 fly -t dash sp -p test-webauto -c pipeline.yml -l
 
 DISPLAY=:0.0
