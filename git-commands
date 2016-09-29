@@ -11,3 +11,6 @@
   - git commit -m "commit message"
   - git pull origin master
   - git push origin my_branch
+
+- git branch -d <branchname> // to delete a local branch
+- git push origin --delete <branch_name> // delete remote branch
