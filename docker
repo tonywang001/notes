@@ -13,9 +13,13 @@ docker commit f7943e42aff0 apachesnapshot
 
 docker run -t -i apachesnapshot /bin/bash
 
+fly -t dash sp -p test-webauto -c pipeline.yml -l
+
 DISPLAY=:0.0
 codeDir=/root/webauto
 ucdPassword=dash4test
 JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
 ANT_HOME=/usr/share/java/apache-ant/
 PATH=$PATH:$JAVA_HOME/bin:$ANT_HOME/bin
+
+export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8
