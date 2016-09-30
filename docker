@@ -17,6 +17,9 @@ docker run -t -i apachesnapshot /bin/bash
 // to create a new pipeline
 fly -t dash sp -p test-webauto -c pipeline.yml -l
 
+// to watch a job
+fly -t dash watch -j webauto-test/rest-api-test1
+
 DISPLAY=:0.0
 codeDir=/root/webauto
 ucdPassword=dash4test
