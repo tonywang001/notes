@@ -14,14 +14,6 @@ docker commit f7943e42aff0 apachesnapshot
 docker run -t -i apachesnapshot /bin/bash
 
 
-// to create a new pipeline
-fly -t dash sp -p test-webauto -c pipeline.yml -l
-
-// to watch a job
-fly -t dash watch -j webauto-test/rest-api-test1
-
-// to run a task from command line
-fly -t dash e -c rest1.yml -i task-definitions=../
 
 DISPLAY=:0.0
 codeDir=/root/webauto
