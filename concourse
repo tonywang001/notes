@@ -1,4 +1,7 @@
 
+// create target and login to concourse server
+fly -t dash login -c http://9.30.244.90:8080
+
 // to create a new pipeline
 fly -t dash sp -p test-webauto -c pipeline.yml -l
 
@@ -7,3 +10,6 @@ fly -t dash watch -j webauto-test/rest-api-test1
 
 // to run a task from command line
 fly -t dash e -c rest1.yml -i task-definitions=../
+
+// delete a pipeline
+fly -t dash destroy-pipeline --pipeline test-webauto_tony
