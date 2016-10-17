@@ -11,3 +11,17 @@ concourse/changeme
 // concourse server 2
 9.30.244.90
 concourse/changeme
+
+// console pipeline slack webhook
+https://hooks.slack.com/services/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
+
+// josh's falafel
+test-machine-ip: 9.30.147.203
+ldap-password: YzUwNmQ2ZGUyNjdj
+db2-password: MWVjYzliMDUwYWYz
+
+// uni dashdb machine
+9.30.147.40
+db2 password: Y2NjNWU3Y2VkMDM3
+ldap password: ZjRiZmU4MDlkYWNm
+
